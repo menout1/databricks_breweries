@@ -1,6 +1,6 @@
 ![image](https://github.com/menout1/databricks_breweries/assets/58555709/60b46ced-20f7-4e57-a4cf-0985626eb22c) - <h1> <b> Databricks_Breweries </b> </h1>
 
-<h1> The Breweries Case </h1>
+<h2> The Breweries Case </h2>
 
 In order to do the case, I used the Azure cloud provider, which all me to use Databricks and DataFactory to load Breweries information from API. I also use Python, PySpark, Spark and Parquet format with compress to save space in the cloud storage.
 
