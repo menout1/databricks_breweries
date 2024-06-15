@@ -1,4 +1,4 @@
-![image](https://github.com/menout1/databricks_breweries/assets/58555709/60b46ced-20f7-4e57-a4cf-0985626eb22c) - <b1> <b> Databricks_Breweries </b> </h1>
+![image](https://github.com/menout1/databricks_breweries/assets/58555709/60b46ced-20f7-4e57-a4cf-0985626eb22c) - <h1> <b> Databricks_Breweries </b> </h1>
 
 <h1> The Breweries Case </h1>
 
