@@ -83,7 +83,7 @@
 					{
 						"activity": "ingestion-to-gold",
 						"dependencyConditions": [
-							"Succeeded"
+							"Failed"
 						]
 					}
 				],
