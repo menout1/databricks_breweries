@@ -1,0 +1,9 @@
+{
+	"name": "df-rg-breweries",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3160ad26-bf0e-4a1e-ada9-16b74181dc06",
+		"tenantId": "2c6ac419-1cdc-429b-bb5a-5aaa3953b20e"
+	}
+}
