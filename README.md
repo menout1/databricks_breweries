@@ -21,9 +21,17 @@ In order to do the case, I used the Azure cloud provider, which all me to use Da
 
 ![image](https://github.com/menout1/databricks_breweries/assets/58555709/c370aa61-7a53-4f93-8131-5748a8435735)
 
-<b> Azure Data Factory - It was used to build the pipeline, schedule the jobs and monitoring the results sending by email if it works with success or failed. </b>
+<b> Another query and graph </b>
+![image](https://github.com/menout1/databricks_breweries/assets/58555709/6b50297b-6ac7-4133-b3dd-38a68b8d912d)
+
+
+<b> Azure Data Factory - It was used to build the pipeline, schedule the jobs and monitoring the results sending by email if it works with success or failed. </b> 
 
 ![image](https://github.com/menout1/databricks_breweries/assets/58555709/005412d8-d9d1-4234-959d-bdf33941a17c)
+
+<b> I also created a trigger to run the job for each 1 hour. </b>
+
+![image](https://github.com/menout1/databricks_breweries/assets/58555709/c53cb965-5237-42b9-b0d7-b45e71cd89f2)
 
 
 <b>Email Success - </b>
@@ -45,4 +53,4 @@ In order to do the case, I used the Azure cloud provider, which all me to use Da
 
 
 
-![image](https://github.com/menout1/databricks_breweries/assets/58555709/d02267b8-e62e-43bd-ab57-710490615a77)
+
