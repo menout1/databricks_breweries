@@ -48,6 +48,33 @@
 					"referenceName": "databricks_datafactory_link",
 					"type": "LinkedServiceReference"
 				}
+			},
+			{
+				"name": "ingestion-to-gold",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "ingestion-to-silver",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Repos/marcelo77_df@hotmail.com/databricks_breweries/notebooks/silver_to_gold"
+				},
+				"linkedServiceName": {
+					"referenceName": "databricks_datafactory_link",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"annotations": []
