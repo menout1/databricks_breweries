@@ -1,37 +1,40 @@
 ![image](https://github.com/menout1/databricks_breweries/assets/58555709/60b46ced-20f7-4e57-a4cf-0985626eb22c) - <b> Databricks_Breweries </b>
 
-The Breweries Case
+<h1> The Breweries Case </h1>
+
 In order to do the case, I used the Azure cloud provider, which all me to use Databricks and DataFactory to load Breweries information from API. I also use Python, PySpark, Spark and Parquet format with compress to save space in the cloud storage.
-It was created 3 layers Bronze, Silver and Gold in Azure Container
+
+<b> It was created 3 layers Bronze, Silver and Gold in Azure Container </b>
 ![image](https://github.com/menout1/databricks_breweries/assets/58555709/1c0eb324-6d50-4ec6-b48a-fa33cab09134)
 
-And also was created 3 databricks notebooks on each one has these purpose.
+<b>And also was created 3 databricks notebooks on each one has these purpose.</b>
 ![image](https://github.com/menout1/databricks_breweries/assets/58555709/40687e08-5cf2-4d5b-a5aa-1a7e10414217)
 
-inbound_to_bronze - It gets the API Brewery in raw data and save in Bronze layer in a json file.
+<b> inbound_to_bronze - It gets the API Brewery in raw data and save in Bronze layer in a json file.</b>
 ![image](https://github.com/menout1/databricks_breweries/assets/58555709/53271bbc-a0c5-459b-a4f7-de3ec27ef710)
 
-bronze_to_silver - It transform the json file in PySpark dataframe, I also modify the data type of phone column to integer, in order to  avoid wrong values. In the end it loads the dataframe in parquet format partition by brewery location and gzip compress to save cloud storage.
+<b> bronze_to_silver - It transform the json file in PySpark dataframe, I also modify the data type of phone column to integer, in order to  avoid wrong values. In the end it loads the dataframe in parquet format partition by brewery location and gzip compress to save cloud storage.</b>
 
 ![image](https://github.com/menout1/databricks_breweries/assets/58555709/8efe0113-92e9-4a44-a6e4-2c7a87507fc1)
 
-silver_to_gold - This script gets data in the silver layer copied to gold layer. So, I created a view in order to do some aggregations queries.
+<b> silver_to_gold - This script gets data in the silver layer copied to gold layer. So, I created a view in order to do some aggregations queries.</b>
 
 ![image](https://github.com/menout1/databricks_breweries/assets/58555709/c370aa61-7a53-4f93-8131-5748a8435735)
 
-Azure Data Factory - It was used to build the pipeline, schedule the jobs and monitoring the results sending by email if it works with success or failed.
+<b> Azure Data Factory - It was used to build the pipeline, schedule the jobs and monitoring the results sending by email if it works with success or failed. </b>
 
 ![image](https://github.com/menout1/databricks_breweries/assets/58555709/005412d8-d9d1-4234-959d-bdf33941a17c)
 
 
-Email Success - 
+<b>Email Success - </b>
+
 ![image](https://github.com/menout1/databricks_breweries/assets/58555709/817115e5-c88e-4b92-a1f2-2ce286bc6cd7)
 
-Email Failed -
+<b>Email Failed -</b>
 
 ![image](https://github.com/menout1/databricks_breweries/assets/58555709/34b4343c-e34a-405a-bfc8-906a446ae857)
 
-Git Hub - All the scripts and datafacory objects was published in the git repository in the databricks_breweries branch
+<b>Git Hub - All the scripts and datafacory objects was published in the git repository in the databricks_breweries branch </b>
 
 ![image](https://github.com/menout1/databricks_breweries/assets/58555709/1f365ba2-2771-4f0a-b713-56bb3a6250fa)
 
