@@ -48,7 +48,7 @@ df_new.printSchema()
 
 # MAGIC %md
 # MAGIC
-# MAGIC ### Working with parquet, also do the compress in order to safe space in the container.
+# MAGIC ### Working with parquet, also do the compress in order to save space in the container.
 
 # COMMAND ----------
 
