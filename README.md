@@ -13,7 +13,7 @@ In order to do the the Breweries case, I used the Azure cloud provider which all
 <b> inbound_to_bronze - It gets the API Brewery in raw data and save into Bronze layer with json format file.</b>
 ![image](https://github.com/menout1/databricks_breweries/assets/58555709/53271bbc-a0c5-459b-a4f7-de3ec27ef710)
 
-<b> bronze_to_silver - It transform the json file in PySpark dataframe, I also modify the data type of phone column to integer, in order to  avoid wrong values. In the end it loads the file into the dataframe in parquet format partition by brewery location and gzip compress to save cloud storage.</b>
+<b> bronze_to_silver - It transform the json file in PySpark dataframe, I also modify the data type of phone column to integer, in order to  avoid wrong values. In the end, it loads the file into the dataframe in parquet format partition by brewery location and gzip compress to save cloud storage.</b>
 
 ![image](https://github.com/menout1/databricks_breweries/assets/58555709/8efe0113-92e9-4a44-a6e4-2c7a87507fc1)
 
